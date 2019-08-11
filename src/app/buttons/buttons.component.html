@@ -1,0 +1,25 @@
+<button mat-button>Click me!</button>
+<button mat-raised-button color="primary">Click me!</button>
+<button mat-flat-button color="accent">Click me!</button>
+<button mat-stroked-button color="warn">Click me!</button>
+
+<h3 class="mat-heading">Toggle Button</h3>
+<mat-button-toggle #togglebtn>Bold</mat-button-toggle>
+{{togglebtn.checked}}
+
+<h3 class="mat-heading">Toggle Button Group</h3>
+<mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+{{toggleGroup.value}}
+
+<h3 class="mat-heading">Toggle Button Group Multiple</h3>
+<mat-button-toggle-group #jsGroup="matButtonToggleGroup" multiple>
+  <mat-button-toggle value="angular">Angular</mat-button-toggle>
+  <mat-button-toggle value="react">React</mat-button-toggle>
+  <mat-button-toggle value="vue">Vue</mat-button-toggle>
+</mat-button-toggle-group>
+{{jsGroup.value}}
+

@@ -1,0 +1,8 @@
+.navbars{
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+span {
+    padding-right: 1em;
+    cursor: pointer;
+}
