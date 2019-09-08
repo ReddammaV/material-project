@@ -2,16 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-//services
-import { ApiService } from './api.service';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+//services
+import { ApiService } from './api.service';
+
+// guard
+import { DeactivateGuard } from './deactivate.guard';
+
+import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -55,7 +57,10 @@ import { NgclassComponent } from './ngclass/ngclass.component';
     ReactiveFormsModule,
     FlexLayoutModule
   ],
-  providers: [ApiService],
+  providers: [
+    ApiService,
+    DeactivateGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

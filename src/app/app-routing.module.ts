@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// guard
+import { DeactivateGuard } from './deactivate.guard';
+
 import { ButtonsComponent } from './buttons/buttons.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -25,6 +28,10 @@ const routes: Routes = [
   { path: 'layout', component: LayoutComponent },
   { path: 'namelayout', component: NameLayoutComponent },
   { path: 'ngclass', component: NgclassComponent },
+  {
+    path: 'customers',
+    loadChildren: './customers/customers.module#CustomersModule'
+  },
 
 
 
