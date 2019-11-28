@@ -8,8 +8,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
-import { MatPaginatorModule, MatFormFieldModule, MatSelectModule, MatInputModule } from '@angular/material';
-
+import { MatPaginatorModule, MatFormFieldModule, MatSelectModule, MatInputModule, MatTabsModule } from '@angular/material';
 const MaterialComponents = [
   MatButtonModule,
   MatCheckboxModule,
@@ -23,7 +22,8 @@ const MaterialComponents = [
   MatPaginatorModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatInputModule
+  MatInputModule,
+  MatTabsModule
 ]
 
 @NgModule({

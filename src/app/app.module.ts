@@ -27,6 +27,11 @@ import { CardComponent } from './card/card.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NameLayoutComponent } from './name-layout/name-layout.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { PageComponent } from './page/page.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { MypaginationComponent } from './mypagination/mypagination.component';
+import { MytabComponent } from './mytab/mytab.component';
 
 
 @NgModule({
@@ -44,7 +49,12 @@ import { NgclassComponent } from './ngclass/ngclass.component';
     CardComponent,
     LayoutComponent,
     NameLayoutComponent,
-    NgclassComponent
+    NgclassComponent,
+    PaginationComponent,
+    PageComponent,
+    TabsComponent,
+    MypaginationComponent,
+    MytabComponent
   ],
   entryComponents:[DialogExampleComponent, DialogemployeeComponent],
   imports: [

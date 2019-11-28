@@ -10,8 +10,15 @@ import { map, catchError } from 'rxjs/operators';
 })
 export class ApiService {
   url = "http://localhost:3000/employees";
+  agiraurl = "http://nas.agiratech.com/api/prerender/company/crime";
 
   constructor(private http:HttpClient) { }
+
+  //agira
+  getAgira(){
+    return this.http.get<any[]>(this.agiraurl);
+  }
+  //agira end
 
   getEmployee(): Observable<Iemployee[]> {
     return this.http.get<Iemployee[]>(this.url);
@@ -39,5 +46,8 @@ export class ApiService {
   deleteUser(id: number): Observable<void> {
     return this.http.delete<void>(this.url + '/' + id)
   }
+
+  // pagination
+  // /posts?_page=1&_limit=5
   
 }

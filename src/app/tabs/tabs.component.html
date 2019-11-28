@@ -1,0 +1,13 @@
+<mat-tab-group selectedIndex={{tab}} (selectedTabChange)="tabClick($event)" mat-stretch-tabs
+class="example-stretched-tabs">
+  <mat-tab label="Card"> 
+    <app-card></app-card>  
+  </mat-tab>
+  <mat-tab label="Pagination"> 
+    <app-pagination></app-pagination>  
+  </mat-tab>
+  <mat-tab label="Buttons"> 
+    <app-buttons></app-buttons>  
+  </mat-tab>
+</mat-tab-group>
+<router-outlet></router-outlet>
